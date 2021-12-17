@@ -29,9 +29,9 @@ function sizes(){
             photo.classList.add('wide');
         });
     } else {
-        logo.style.transform = "rotate(-90deg)";
+        logo.style.transform = "translateX(-50%) rotate(-90deg)";
         logo.style.width = height + "px";
-        logo.style.left = -350 + "px";
+        logo.style.left = 50 + "px";
 
         email.style.top = 20 + "px";
         email.style.left = height - 210 + "px";
