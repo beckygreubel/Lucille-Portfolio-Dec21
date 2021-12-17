@@ -1,0 +1,95 @@
+@font-face{
+    font-family: Cachet;
+    src: url(CachetBook.otf);
+}
+
+:root{
+    --mainyellow: #F9E63D;
+    --mainwhite: #FFFEF4;
+    --maingray: #83908C;
+    --mainblue: #335659;
+    --mainblack: #110F00;
+    --mainfont: "Cachet";
+}
+
+body, html, h3, p{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-family: var(--mainfont), Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    line-height: 120%;
+    font-weight:normal;
+}
+
+body{
+    background-color: var(--mainyellow);
+}
+
+#openingPhotos, #mainContent{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+#openingPhotos{
+    opacity: 1;
+    transition: opacity 1s;
+    overflow:hidden;
+    pointer-events: none;
+}
+
+.openingPhoto{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.wide{
+    width: 100%;
+}
+
+.long{
+    height: 100%;
+}
+
+#logo{
+    position: absolute;
+    top: 42%;
+}
+
+#textContent{
+    position: absolute;
+    overflow-y: scroll;
+    color: var(--mainblack);
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#textContent::-webkit-scrollbar{
+    display: none;
+}
+
+p{
+    padding-bottom: 40px;
+}
+
+h3{
+    position: absolute;
+    color: var(--mainwhite);
+}
+
+a{
+    color: var(--mainblue);
+    transition: color 1s;
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--mainwhite);
+}
+
+.afterOpen{
+    opacity: 0;
+    transition: opacity 3s;
+}
